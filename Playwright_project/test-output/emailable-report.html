@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">15,817</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">pw.Playwright_project.multiple_dataPtest</td><td><a href="#m0">login_demowebshop</a></td><td rowspan="3">1793684341555</td><td rowspan="3">3825</td></tr><tr class="failedeven"><td><a href="#m1">login_demowebshop</a></td></tr><tr class="failedeven"><td><a href="#m2">login_demowebshop</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">pw.Playwright_project.multiple_dataPtest</td><td><a href="#m3">login_demowebshop</a></td><td rowspan="2">1793684341555</td><td rowspan="2">15707</td></tr><tr class="passedeven"><td><a href="#m4">login_demowebshop</a></td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">pw.Playwright_project.multiple_dataPtest#login_demowebshop</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>kaveri@gmail.com</td><td>kaveri@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">com.microsoft.playwright.PlaywrightException: Cannot find command to respond: 2
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:230)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+	at com.microsoft.playwright.impl.BrowserTypeImpl.launch(BrowserTypeImpl.java:49)
+	at com.microsoft.playwright.impl.BrowserTypeImpl.launch(BrowserTypeImpl.java:36)
+	at pw.Playwright_project.multiple_dataPtest.login_demowebshop(multiple_dataPtest.java:44)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 7 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">pw.Playwright_project.multiple_dataPtest#login_demowebshop</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>gargi@gmail.com</td><td>gargi@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">com.microsoft.playwright.PlaywrightException: Cannot find object to call __adopt__: request-context@5d86b9579793792609886fe82efb6e6b
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:299)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:230)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+	at com.microsoft.playwright.impl.BrowserImpl.newContext(BrowserImpl.java:187)
+	at com.microsoft.playwright.impl.BrowserImpl.newContext(BrowserImpl.java:35)
+	at com.microsoft.playwright.Browser.newContext(Browser.java:1444)
+	at pw.Playwright_project.multiple_dataPtest.login_demowebshop(multiple_dataPtest.java:51)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 7 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">pw.Playwright_project.multiple_dataPtest#login_demowebshop</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>harshal@gmail.com</td><td>harshal@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">com.microsoft.playwright.PlaywrightException: Object doesn&apos;t exist: response@7c2f00717b0267f3bb19639c86557e47
+	at com.microsoft.playwright.impl.Connection.getExistingObject(Connection.java:211)
+	at com.microsoft.playwright.impl.BrowserContextImpl.handleEvent(BrowserContextImpl.java:885)
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:315)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:230)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:429)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:971)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:44)
+	at com.microsoft.playwright.Page.navigate(Page.java:5759)
+	at pw.Playwright_project.multiple_dataPtest.login_demowebshop(multiple_dataPtest.java:55)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 7 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">pw.Playwright_project.multiple_dataPtest#login_demowebshop</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>ajay@gmail.com</td><td>ajay@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">pw.Playwright_project.multiple_dataPtest#login_demowebshop</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>shruti@gmail.com</td><td>shruti@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
